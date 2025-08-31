@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bandeira.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bandeira.css" />
     <title>Bandeira</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="retangulo">
-        <div class= "losango"></div>
-        <div class="losango2"></div>
-        <div class="circulo">
-        <div class="faixa"></div></div></div>
-        <main>
-            <section>
-                <section>
-                </section>
-            </section>
-        </main>
-        <footer>
-            <div class="audio">
-                <audio preload="metadata" autoplay controls loop>
-                    <source src="./msc/hino-nacional-brasileiro-mp3-3.2-mb"type="audio/mp3">
-                    <source src="./msc/hino-nacional-brasileiro-mp3-3.2-mb"type="audio/mpeg">
-                    <source src="./msc/hino-nacional-brasileiro-mp3-3.2-mb"type="audio/ogg">
-                    <p>INFELIZMENTE O SEU NAVEGADOR NÃO SUPORTA ESSE FORMATO DE MUSICA  :'c </p>
-                    <a href="./midia/hino-nacional-brasileiro.mp3">Clique para Download da musica</a>
-                </audio>
-            </div>
-        </footer>
-</body>
+      <div class="losango"></div>
+      <div class="losango2"></div>
+      <div class="circulo">
+        <div class="faixa"></div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <section></section>
+      </section>
+    </main>
+    <footer>
+      <div class="music-player-container">
+        <div class="custom-player">
+          <button id="playPauseBtn" class="play-btn">▶️</button>
+          <div class="track-info">
+            <span class="song-title">Hino Nacional Brasileiro</span>
+          </div>
+          <div class="time-container">
+            <span id="currentTime">0:00</span> /
+            <span id="totalTime">0:00</span>
+          </div>
+          <input
+            type="range"
+            id="volumeSlider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+          />
+        </div>
+        <audio id="hinoAudio" preload="metadata" loop>
+          <source
+            src="./msc/hino-nacional-brasileiro-mp3-3.2-mb"
+            type="audio/mp3"
+          />
+          <source
+            src="./msc/hino-nacional-brasileiro-mp3-3.2-mb"
+            type="audio/mpeg"
+          />
+          <source
+            src="./msc/hino-nacional-brasileiro-mp3-3.2-mb"
+            type="audio/ogg"
+          />
+        </audio>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
 </html>
-<!-- NAO SOU BOLSONARISTA E NEM LULISTA!-->
